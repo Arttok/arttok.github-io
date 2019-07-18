@@ -5,72 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
 
     <title>Login</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sign-in/">
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- Own Style sheet and Media Queries-->
     <link rel="stylesheet" href="css/stylesheet.css" />
-    <link rel="stylesheet" href="css/media_queries.css" />
 
     <!-- Custom styles for this template -->
-    <link href="signin.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/stylesheet.css">
   </head>
  
   <body class="text-center bg-secondary h-100 loginback">
 
      <!-- Header / Navigation section-->
-     <header>
-            <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 text-light bg-dark border-bottom box-shadow">
-                <h5 class="my-0 mr-md-auto font-weight-normal"> 
-                        <a class="btn btn-outline-primary text-light" href="index.html">
-                            Home
-                        </a>
-                </h5> 
-                <nav class="my-2 my-md-0 mr-md-3 ">
-                        <a class="btn btn-outline-primary text-light" href="registration.html">Register</a> 
-                    
-                    <!-- Dropdown Menu bar that list various other sections of the page-->
-                    <div class="dropdown show bg-dark d-inline text-light btn-outline-primary">
-                        <a class="btn text-light bg-dark btn-outline-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Menu
-                        </a>
-                        <div  class="dropdown-menu menu bg-dark text-light btn-outline-primary" aria-labelledby="dropdownMenuLink">
-                            <a class="dropdown-item btn text-light menu mask" href="index.html">Home</a>
-                            <a class="dropdown-item btn text-light menu mask" href="npcadd.html">NPC Add</a>
-                            <a class="dropdown-item btn text-light menu mask" href="#">NPC Check</a>
-                            <a class="dropdown-item btn text-light menu mask" href="about.html">About</a>
-                            <a class="dropdown-item btn text-light menu mask" href="#">Disclaimer</a>
-                        </div>
+    <nav>
+        <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 text-light bg-dark border-bottom box-shadow">
+            <div class="h5 my-0 mr-md-auto font-weight-normal"> 
+                    <a class="btn btn-outline-primary text-light" href="index.html">
+                        Home
+                    </a>
+            </div> 
+            <div class="my-2 my-md-0 mr-md-3 ">
+                    <a class="btn btn-outline-primary text-light" href="registration.html">Register</a> 
+                
+                <!-- Dropdown Menu bar that list various other sections of the page-->
+                <div class="dropdown show bg-dark d-inline text-light btn-outline-primary">
+                    <a class="btn text-light bg-dark btn-outline-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Menu
+                    </a>
+                    <div  class="dropdown-menu menu bg-dark text-light btn-outline-primary" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item btn text-light menu mask" href="index.html">Home</a>
+                        <a class="dropdown-item btn text-light menu mask" href="about.html">About</a>
                     </div>
-                </nav>
+                </div>
             </div>
-        </header>
+        </div>
+    </nav>
 
     <!-- Main content section, user login with email & password-->
     <main class="text-light p-5">
-        <form class="form-signin">
+        <!--User Login.-->
+        <form class="form-signin" action="npcadd.html" method="GET"> <!--Should be POST not GET-->
         <h1 class="h3 mb-3 font-weight-normal font-weight-bold">Login</h1>
         <p class="text-left col-4 offset-md-4" id="logintxt">Welcome to NPCTracker. The one place where all NPC's matter! A one stop shop for all your NPC's information.</p>
         Please <div class="font-weight-bold d-inline">login</div> below to continue!
         <label for="inputusername" class="sr-only">Username</label>
-        <input type="text" id="inputusername" class="form-control col-2 offset-md-5 mt-3" placeholder="Username" required autofocus>
+        <input type="text" id="inputusername" class="form-control col-2 offset-md-5 mt-3" minlength="6" maxlength="15" placeholder="Username" required autofocus>
         <br>
         <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" id="inputPassword" class="form-control col-2 offset-md-5" placeholder="Password" required>
+        <input type="password" id="inputPassword" class="form-control col-2 offset-md-5"  minlength="6" maxlength="15" placeholder="Password" required>
         <br>
         <div class="checkbox mb-3">
             <label>
             <input type="checkbox" value="remember-me"> Remember me
             </label>
         </div>
-        <a class="btn btn-outline-primary text-light btn-lg btn-block col-2 offset-md-5" href="npcadd.html">Login</a>
+        <button class="btn btn-outline-primary text-light col-2" type="submit" value="Go to NPCAdd">Login</button>
         </form>
     </main>
 
@@ -79,15 +74,15 @@
             <div class="container-fluid fixed-bottom bg-dark">
                 <div class="col-12">
                     <div class="text-right">
-                        <h6>© 2018 Copyright: NPCTracker.Com</h6>
+                        <h6>© 2019 Copyright: NPCTracker.Com</h6>
                     </div>
                 </div>
             </div>
     </footer>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>

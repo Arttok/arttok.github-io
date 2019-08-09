@@ -1,94 +1,95 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+    <head>
+        <title>Template</title>
+        <meta charset="utf-8" />
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+        <!-- FontAwesome Place your kit's code here -->
+        <script src="https://kit.fontawesome.com/dbcee74e1c.js"></script>
 
-    <title>Homepage</title>
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/jumbotron/">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- External CSS-->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
 
 
-    <!-- Own Style sheet and Media Queries-->
-    <link rel="stylesheet" href="css/stylesheet.css" />
-    <link rel="stylesheet" href="css/indexmedia.css" />
-</head>
+    </head>
+    <body class="home bg-secondary text-light">
+    <!-- Start Body -->
 
-<body class="text-center bg-secondary indexback">
-    
-    <!-- Header / Navigation menu, username & password login section-->
-    <nav>
-        <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 text-light bg-dark border-bottom box-shadow">
-            <div class="h5 my-0 mr-md-auto font-weight-normal"> 
-                    <a class="btn btn-outline-primary text-light mobileb" href="#">
-                        Home
-                    </a>
-            </div> 
+        <!-- Header / Navigation section-->
+        <nav>
+            <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 text-light bg-dark border-bottom box-shadow">
+                <div class="h5 my-0 ml-5 mr-md-auto font-weight-normal"> 
+                        <a class="btn btn-outline-primary text-light" href="index.html">
+                            Home
+                        </a>
+                </div> 
+                <div class="col-6 pl-5 h4">Enjoy The Outdoors!</div>
+                <div class="mr-5 ">                    
+                    <!-- Dropdown Menu bar that list various other sections of the page-->
+                    <div class="dropdown show bg-dark d-inline text-light btn-outline-primary">
+                        <a class="btn text-light bg-dark btn-outline-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Menu
+                        </a>
+                        <div  class="dropdown-menu bg-dark text-light btn-outline-primary" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item btn text-light mask" href="index.htm">Home</a>
+                            <a class="dropdown-item btn text-light mask" href="national.html">National Park</a>
+                            <a class="dropdown-item btn text-light mask" href="mountain.html">Mountains</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
 
-            <!--User Signin-->
-            <div class="my-2 my-md-0 mr-md-3 btn-group btnlogin">
-                <form class="form-inline mt-2 mt-md-0 form-label-group" action="npcadd.html" method="GET"> <!--method should be POST-->
-                    <input class="form-control mr-sm-2" minlength="6" maxlength="15" type="text" placeholder="Username" aria-label="Search" required>
-                    <input class="form-control mr-sm-2" type="password" minlength="6" maxlength="15" placeholder="Password" aria-label="Search" required>
-                    <button class="btn btn-outline-primary text-light" type="submit" value="Go to NPCAdd">Sign in</button>
-                </form>
+        <!--page is divided into 2 different sides-->
+        <!--Left Side-->
+        <div class="container">
+            <div class="inner">
+                <div class="hero">
+                    <div class="hero-text">
+                        <!--Section of content on the left side-->
+                        <h1>HartCode</h1>
+                        <h2>Enjoy the Outdoors!</h2>
+                        <p>Come join the fun! Click on the tree icons below to go to our National Park page. There you can search for the best national park by location & park type!</p>
+                        <br>
+                        <p>Click on the mountain to be taken to our Mountains page. There you can find information on 48 different mountains that you can climb!</p>
+                        
+                        <!--ICONS that also function as a menu bar-->
+                        <div class="pb-1 pt-3 offset-md-1">
+                            <a href="national.html"> <i class="fas fa-tree fa-5x pr-5 "></i></a> <!--clickable icons-->
+                            <a href="mountain.html"> <i class="fas fa-mountain fa-5x pl-5"></i></a><!--clickable icons-->
+                        </div>
+                    </div>
 
-                <!--Everyone has access to about section-->
-                <a class="btn btn-outline-primary text-light ml-3 mobileb" href="about.html">About</a>
+                    <!--Right side image-->
+                    <div class="hero-image">
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
 
-    <!-- Main content section, with get started button.-->
-    <main>
-        <div class="row justify-content-center align-items-center">
-            <div id="intro" class="inner cover text-light">
-                <h1 class="cover-heading font-weight-bold" id="mcontent"><u>NPCTracker</u></h1>
-                <p class="lead col-6 offset-md-3 text-center pt-2 bcontent">NPCTracker is a website to help Dungeon Master's (DMs) track their Non-player Characters (NPC's)
-                    across multiple campaigns. DM's are able to save their characters based upon the campaign the NPC is in, with the ability to track important informaiton.
-                </p>
-                <p class="lead col-4 offset-md-4 pb-1">
-                    <a class="btn btn-outline-primary text-light btn-lg btn-block" href="registration.html">Get Started!</a>
-                </p>
-            </div>
-        </div>
-    </main>
-    <br>
-    <br>
-    <!--Disclaimer-->
-    <article class="text-light">
-        <div class="container col-3 bcontent">
-            <h2>Disclaimer:</h2>
-            <p>NPCTracker is unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed by Wizards. 
-                Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.</p>
-        </div>
-    </article>
 
-    
-    <!-- Fluid footer, scrools with page-->
-    <footer class="text-white">
-            <div class="container-fluid fixed-bottom bg-dark">
+
+                <!-- Fluid footer, scrools with the page.-->
+    <footer class="text-white footer pt-2">
+            <div class="bg-dark">
                 <div class="col-12">
                     <div class="text-right">
-                        <h6>© 2018 Copyright: NPCTracker.Com</h6>
+                        <p class="h6 pb-1">	&copy; 2019 Copyright: HartCode</p>
                     </div>
                 </div>
             </div>
     </footer>
 
-
-    <!-- Bootstrap core JavaScript
+        <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
-
+    
+    <!-- End Body -->    
+    </body>    
 </html>

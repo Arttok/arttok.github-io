@@ -1,0 +1,121 @@
+/*Gives blue background when hovered over*/
+.menu:hover {
+  background-color: blue;
+}
+
+/*Gives blue background when hovered over*/
+.btn:hover {
+  background-color: blue;
+}
+
+/*gives h2 italic text*/
+h2 {
+  font-style: italic;
+}
+
+/*gives font-awesome ICON's white background */
+.fas {
+  color: white;
+}
+
+/*gives font-aweosme hover color - blue */
+.fas:hover {
+  color: blue;
+}
+
+.container 
+{
+  width: 100%;
+  height: 750px;
+/*  Relative Parent  */
+  position: relative;
+}
+
+.inner 
+{
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/*container for both the image and the text on the page*/
+.hero 
+{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+/*Sets the % size that the image takes up, out of the div container */
+.hero > div 
+{
+  width: 50%;
+}
+
+/*  Margin to place the text div  */
+.hero-text 
+{
+  margin-right: 50%;
+}
+
+.hero-image 
+{
+/*  Positions the hero image where you want it   */
+  position: absolute;
+  right: -50px;
+  width: 50%;
+  height: 100%;
+  /* margin-left: calc((100vw - 1200px) * -1); */
+  background-image: url(../images/park.jpg);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  border-radius: 15%; /*gives slightly rounded corner to pictures */
+}
+
+.menu {
+  padding-right: 20px;
+}
+
+/*background picture at top of naitonal html*/
+#picture {
+  background-image: url(../images/park.jpg);
+  background-attachment:fixed;
+  background-position: top center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  width: 100%;
+}
+
+figure 
+{
+  margin-top: -15px;
+}
+
+/*bolds and underlines specific text that needs to be.*/
+.boldunder 
+{
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/*css for image on national page*/
+#imageNational {
+  width: 100%; 
+  height: 250px;
+}
+
+/*css for table on mount page, to lower under the dropdown select*/
+#mount
+{
+  margin-top: 5px;
+}
+
+/*aligns the mount menu with the dropdown*/
+.mountmenu
+{
+  margin-left: 120px;
+}

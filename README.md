@@ -1,20 +1,13 @@
-# NPC Tracker
+# Enjoy The Outdoors
 
-![Dungeon and Dragon ICON](images/dndbanner_sm.png)
+Week 3's Friday Project. "You will build a website that helps a user find things to do to enjoy the great outdoors. Our site specializes in finding national parks to enjoy and mountains to climb. You will need to provide: Home page, national parks page, and mountains information page.
 
 
-Hello! The goal of this README is to inform you about my site, NPCTracker.com
+# National Parks Page
 
-## Goal
+Search by location or by Park Type.
+Optional - all national parks.
 
-The goal of this website is to allow Dungeon Master's (DM) for Dungeon and Dragons (DnD) to easily track NPC's. The goal is to allow them to keep track not only via the NPC's name but also via the campaign.
+# Mountains information
 
-## Audience
-
-The primary audience of this website is for DM's who primarily run multiple campaigns at one time. Though this will be equally useful for DM's who only run one campaign. 
-The secondary audience is the players of DnD. These players will greatly benefit from the DM's ability to portray multiple NPCs in a consistent manner.
-
-### Credits
-Content provided by [WOTC](https://company.wizards.com/)
-NPCTracker is unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed by Wizards. 
-Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.
+Drop down for 48 locations, provides information on the selected mountain..

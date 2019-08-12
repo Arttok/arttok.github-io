@@ -27,20 +27,21 @@ window.onload = function ()
     
     //gets the starting dropdown since State gets picked at start.
     startingDDL(states, parkDropdown);
-    getParkInfo (objs); 
+
     //since radio buttons are in a array
     for (let i = 0; i < radioSelect.length; i++)
     {
         radioSelect[i].onchange = function ()
         {
             getDropDownInfo(states, parktypes, parkDropdown);
-            getParkInfo (objs); 
+            populateTable (objs, table, i, j, tBody);
         }
     }     
     
     parkDropdown.onchange = function ()
         {
             getParkInfo(objs);
+            populateTable (objs, table, i, j, tBody);
         }
 }
 

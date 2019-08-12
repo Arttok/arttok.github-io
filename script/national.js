@@ -21,7 +21,8 @@ window.onload = function ()
      {    
          // the returned data is available in an "already parsed" 
              // parameter named data
-             objs = nationalparks.parks;     
+             objs = nationalparks.parks;
+             getParkInfo (objs); 
      });
     
     //gets the starting dropdown since State gets picked at start.
@@ -33,6 +34,7 @@ window.onload = function ()
         radioSelect[i].onchange = function ()
         {
             getDropDownInfo(states, parktypes, parkDropdown);
+            getParkInfo (objs); 
         }
     }     
     
@@ -98,6 +100,7 @@ function getParkInfo (objs)
     // Create an empty <thead> element and add it to the table:
     var header = table.createTHead();
 
+    var tBody = table.appendChild(document.createElement('tbody'))
     // Create an empty <tr> element and add it to the first position of <thead>:
     var row = header.insertRow(0);
 
@@ -122,12 +125,12 @@ function getParkInfo (objs)
     {
         if (locationDrop.checked && parkSelect[i].innerHTML == objs[j].State)
         {
-            populateTable(objs, table, i, j);
+            populateTable(objs, table, i, j, tBody);
         }
 
         if (typeDropDown.checked && objs[j].LocationName.search(parkSelect[i].innerHTML) != -1)
         {
-            populateTable(objs, table, i, j);
+            populateTable(objs, table, i, j, tBody);
         }
     }
 }
@@ -141,9 +144,9 @@ function getParkInfo (objs)
 *@param ---row makes the table row
 *@param ---cell1 & cell 2 make the 2 cells on the table.
 */
-function populateTable (objs, table, i, j)
-{
-            let row = table.insertRow(table.rows.length);
+function populateTable (objs, table, i, j, tBody)
+{   
+            let row = tBody.insertRow(tBody.rows.length);
             let cell1 = row.insertCell(0);
             let cell2 = row.insertCell(1);
             let cell3 = row.insertCell(2);

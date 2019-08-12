@@ -16,6 +16,7 @@ window.onload = function ()
                     opt.text = objs[i].name;
                     opt.value = i;
                     mountainList.appendChild(opt);
+                    getInfo (objs);
                 }   
         });
 

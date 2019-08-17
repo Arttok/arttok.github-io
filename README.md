@@ -1,13 +1,14 @@
-# Enjoy The Outdoors
+# Learning is Fun!
 
-Week 3's Friday Project. "You will build a website that helps a user find things to do to enjoy the great outdoors. Our site specializes in finding national parks to enjoy and mountains to climb. You will need to provide: Home page, national parks page, and mountains information page.
+"You will build a website that lets a user explore and register for continuing education courses at a community center. You will use a Node.js/Express back end REST API to help manage the data services you will need to use".
 
 
-# National Parks Page
+# Pages
 
-Search by location or by Park Type.
-Optional - all national parks.
+Index - Highlights our edication-based community center and contains a link to a courses page.
 
-# Mountains information
+Courses Page - provides a user interface that lets a user search by category. The categories can be fetched from a REST API.
 
-Drop down for 48 locations, provides information on the selected mountain..
+Details Page- Shows all of the details for one course. It should also show any students registered for the course.
+
+Register Page - The user can enter their name and email address and allows them to register for the class.

@@ -1,0 +1,81 @@
+<!--Details Page-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Product Selector</title>
+        <meta charset="utf-8" />
+
+        <!-- FontAwesome Place your kit's code here -->
+        <script src="https://kit.fontawesome.com/dbcee74e1c.js"></script>
+
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <!-- External CSS-->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+        <!--FavICON-->
+        <link rel="shortcut icon" href="images/favicon.png" />
+
+    </head>
+    <body class="bg-muted text-dark">
+    <!-- Header / Navigation section-->
+    <nav>
+        <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 text-light bg-dark border-bottom box-shadow">
+            <div class="h5 my-0 ml-5 mr-md-auto font-weight-normal"> 
+                    <a class="btn btn-outline-primary text-light" href="index.html">
+                        Home
+                    </a>
+            </div> 
+            <div class="col-6 pl-5 h4">HartCode University</div>
+            <div class="mr-5 ">                    
+                <!-- Dropdown Menu bar that list various other sections of the page-->
+                <div class="dropdown show bg-dark d-inline text-light btn-outline-primary">
+                    <a class="btn text-light bg-dark btn-outline-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Menu
+                    </a>
+                    <div  class="dropdown-menu bg-dark text-light btn-outline-primary" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item btn text-light mask" href="index.html">Home</a>
+                        <a class="dropdown-item btn text-light mask" href="courses.html">Courses</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--Image at the top of the page-->
+    <figure class="text-center">
+        <img src="images/class.png" alt="Class">
+    </figure>
+    <!--Main section of the page. Has the menu bar as well as table that is generated via JS-->
+    <main>
+        <form class="col-12" method="GET"><!--Should be Post but not due to github / live server reasons.-->
+            <div class="col-12">
+                <div class="text-center">
+                    <p class="h2 boldunder offset-md-3" id="Productname">Class Information</p>
+                    <div class="pt-3">
+                    <table class="table table-bordered border-light text-dark" id="detailtbl">
+                    </table>
+                    <br>
+                    <p class="h2">Students</p>
+                    <table class="table table-bordered border-light text-dark" id="students">
+                    </table>
+                    </div>
+                    <button type="button" class="btn btn-lg btn-secondary col-1" id="cancel">Cancel</button>
+                    <a href="" class="btn btn-lg btn-secondary col-1 offset-md-1" id="register">Register</a>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous"></script>
+    <script src="scripts/details.js"></script> 
+    
+    <!-- End Body -->      
+    </body>
+</html>

@@ -1,0 +1,19 @@
+.btn:hover 
+{
+    background-color: blue;
+}
+
+.mask:hover 
+{
+    background-color: blue;
+}
+
+.overflowSet 
+{
+    overflow-x: hidden;
+}
+
+.textwidth 
+{
+    width: 15em;
+}
